@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --pico-font-family-sans-serif: Figtree, "Noto Sans", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
+}
+
+body, html {
+  min-height: 100vh;
+}
+
+dialog > article > header .close, dialog > article > header :is(a,button)[rel=prev] {
+  /* fix the position of the close button */
+  transform: translateY(5px);
+}

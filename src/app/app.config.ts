@@ -18,7 +18,8 @@ export const appConfig: ApplicationConfig = {
       provideRouter(routes, withHashLocation()),
       provideHttpClient(withFetch()),
       provideAppInitializer(async () => {
-        const res = await fetch('http://localhost:4200/items.json');
+        // const res = await fetch('http://localhost:4200/items.json');
+        const res = await fetch('https://ziv.github.io/medium/items.json');
         const items = await res.json();
         setItems(items);
       }),
